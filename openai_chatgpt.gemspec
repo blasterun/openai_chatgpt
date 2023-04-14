@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   chat responses API."
   spec.homepage = "https://github.com/sulmanweb/openai_chatgpt"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.6"
+  spec.required_ruby_version = ">= 2.5.9"
 
   # spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
@@ -37,7 +37,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
   spec.extra_rdoc_files = %w[README.md]
 
-  spec.add_dependency("faraday", "~> 2.5")
+  spec.add_dependency("faraday", "< 2.0")
   spec.add_development_dependency("rubocop", "~> 1.35")
   spec.metadata["rubygems_mfa_required"] = "true"
 end
